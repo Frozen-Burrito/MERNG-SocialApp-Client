@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { useQuery } from '@apollo/client';
 import { FETCH_POSTS_QUERY } from '../util/graphql';
-
-import { AuthContext } from '../context/auth';
 
 import { Item, Divider, Transition, Loader, Header } from 'semantic-ui-react';
 import Post from './Post';
@@ -11,7 +9,6 @@ import NewPostForm from './NewPostForm';
 
 function Feed() {
 
-  const { user } = useContext(AuthContext);
   const { loading, data }= useQuery(FETCH_POSTS_QUERY);
 
   let posts;

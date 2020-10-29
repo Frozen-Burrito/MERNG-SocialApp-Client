@@ -6,7 +6,7 @@ import { Grid, Container, Header, Image } from 'semantic-ui-react';
 import AppMenu from '../components/Menu';
 
 function Profile(props) {
-  const userId = props.match.params.userId;
+  let userId = props.match.params.userId;
   const { user: currentUser } = useContext(AuthContext);
 
   if (!userId) {

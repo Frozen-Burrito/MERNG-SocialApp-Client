@@ -10,7 +10,6 @@ import Trending from '../components/Trending';
 function Home() {
   const { user } = useContext(AuthContext);
 
-
   return (
     <Grid>
       <Grid.Column width={4}>

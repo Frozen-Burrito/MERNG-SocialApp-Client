@@ -5,7 +5,7 @@ import moment from 'moment';
 import { Comment, Header, Card, Form } from 'semantic-ui-react';
 
 import { AuthContext } from '../context/auth';
-import { ADD_COMMENT_MUTATION, DELETE_COMMENT_MUTATION } from '../util/graphql';
+import { ADD_COMMENT_MUTATION } from '../util/graphql';
 
 function Comments({postId, comments}) {
 

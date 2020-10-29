@@ -4,7 +4,7 @@ import moment from 'moment';
 
 import { AuthContext } from '../context/auth';
 
-import { Item, Button, Icon, Label, Popup } from 'semantic-ui-react';
+import { Item, Button, Icon, Popup } from 'semantic-ui-react';
 import LikeButton from './LikeButton';
 import DeleteButton from './DeleteButton';
 
